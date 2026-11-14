@@ -1,0 +1,93 @@
+/* ===== CAPTCHA ===== */
+.captcha-box {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.captcha-question {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    flex: 1;
+}
+
+.captcha-input {
+    width: 80px;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 15px;
+    text-align: center;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.captcha-input:focus {
+    border-color: #f97316;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15);
+}
+
+.captcha-refresh {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6b7280;
+    padding: 6px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.captcha-refresh:hover {
+    background: #f3f4f6;
+    color: #f97316;
+}
+
+.captcha-refresh svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* ===== HONEYPOT (invisible pour les humains) ===== */
+.honeypot-field {
+    position: absolute !important;
+    left: -9999px !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    pointer-events: none !important;
+}
+
+/* ===== MESSAGE BLOCAGE ===== */
+.blocked-message {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #991b1b;
+    font-size: 14px;
+}
+
+.blocked-message svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: #ef4444;
+}
+
+/* ===== COMPTEUR TENTATIVES ===== */
+.attempts-counter {
+    text-align: center;
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 8px;
+}
